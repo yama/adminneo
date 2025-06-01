@@ -23,6 +23,9 @@
 
 set -e
 
+# パイプ経由でも対話入力できるようにするための設定
+exec < /dev/tty
+
 # Color definitions
 YELLOW='\033[0;33m'
 BOLD='\033[1m'
